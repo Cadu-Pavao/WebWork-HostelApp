@@ -1,3 +1,52 @@
 /**********************************************/
 /*  Folha de estilo - Sparkling Water Hostel  */
 /**********************************************/
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    background-color: #FB636F;
+    padding: 20px 0;
+}
+
+.navbar{
+    position: relative;
+    width: 100%;
+    margin: 0;
+}
+
+.navbar h1 img {
+    width: 50px;
+    padding: 5px 5px 5px 10px;
+}
+
+.login {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+}
+
+.itens-nav {
+    position: absolute;
+    top: 20px;
+    left: 60px;
+
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a{
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #B9313B;
+} 
