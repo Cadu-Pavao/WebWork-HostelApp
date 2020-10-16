@@ -1,13 +1,28 @@
 /**********************************************/
 /*  Folha de estilo - Sparkling Water Hostel  */
 /**********************************************/
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+    font-size: small;
+    font-weight: lighter;
+    margin: 10px 0;
+}
+
 body{
-    font-family: 'Montserrat', sans-serif;
+
 }
 
 header{
     background-color: #FB636F;
     padding: 20px 0;
+
 }
 
 .navbar{
@@ -25,12 +40,15 @@ header{
     position: absolute;
     top: 20px;
     right: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: small;
 }
 
 .itens-nav {
     position: absolute;
     top: 20px;
     left: 60px;
+    font-family: 'Roboto', sans-serif;
 
 }
 
@@ -50,3 +68,64 @@ nav a{
 nav a:hover {
     color: #B9313B;
 } 
+
+.visitCard {
+    width: auto;
+    height: auto;
+    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8) ), url('images/02.jpg');
+    background-position:center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.visitCard p, .visitCard h1{
+    color: white;
+}
+
+
+.visitCard div{
+    margin: 20px 60px;
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+button {
+    background: #FB636F;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    height: 40px;
+    margin: 50px 0;
+    transition: 1s transform;
+    width: 200px;
+}
+
+button:active{
+    background: #B9313B;
+    transform: scale(1.2);
+}
+
+.visitCard img {
+    float: right;
+    width: 150px;
+    margin: 20px;
+    display: inline-flex;
+}
+
+.dark { 
+    background-color: #282A2D;
+    color: white;
+}
+
+.sobre div img{
+    width: 250px;
+}
+
+.atracao img{
+    width: 350px;
+    height: 250px;
+}
