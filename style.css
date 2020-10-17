@@ -15,14 +15,14 @@ p{
     margin: 10px 0;
 }
 
-body{
-
-}
-
 header{
     background-color: #FB636F;
     padding: 20px 0;
 
+}
+
+main section{
+    padding: 25px 100px;
 }
 
 .navbar{
@@ -69,6 +69,8 @@ nav a:hover {
     color: #B9313B;
 } 
 
+/**** INDEX *****/
+
 .visitCard {
     width: auto;
     height: auto;
@@ -81,14 +83,6 @@ nav a:hover {
 
 .visitCard p, .visitCard h1{
     color: white;
-}
-
-
-.visitCard div{
-    margin: 20px 60px;
-    width: 40%;
-    display: inline-block;
-    vertical-align: top;
 }
 
 button {
@@ -110,10 +104,8 @@ button:active{
 }
 
 .visitCard img {
-    float: right;
     width: 150px;
     margin: 20px;
-    display: inline-flex;
 }
 
 .dark { 
@@ -128,4 +120,209 @@ button:active{
 .atracao img{
     width: 350px;
     height: 250px;
+}
+
+footer{
+    border-top: 1px solid white;
+    background-color: #282A2D;
+    color: white;
+    font-size: 20px;
+    font-family: roboto;
+    padding-top: 25px;
+}
+
+.horizontal_divider {
+    height: auto;
+    border-left: 3px solid black;
+}
+
+.social, .social a{
+    text-decoration: none;
+    font-size: 16px;
+    font-family: Roboto;
+    margin: 10px;
+    color: #FB636F;
+    border-color: #FB636F;
+}
+
+.contact, .contact p{
+    text-decoration: none;
+    font-size: 16px;
+    font-family: Roboto;
+    margin: 10px;
+    color: #6397FB;
+    border-color: #6397FB;
+}
+
+.adress, .adress p{
+    text-decoration: none;
+    font-size: 16px;
+    font-family: Roboto;
+    margin: 10px;
+    color: #63FBB2;
+    border-color: #63FBB2;
+}
+
+footer section {
+    background-color: #FB636F;
+    height: 40px;
+}
+
+/**** LOGIN *****/
+
+.background_full{
+    padding: 25px;
+    width: auto;
+    height: auto;
+    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8) ), url('images/02.jpg');
+    background-position:center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+
+}
+
+.login_zone {
+    background-color: #FB636F;
+    border-radius: 30px;
+    width: 300px;
+    height: 600px;
+}
+
+input[type=text] {
+    border: none;
+    background-color: white;
+    border-radius: 50px;
+    height: 35px;
+    width: 250px;
+    color: #cccccc;
+}
+
+input[type=submit] {
+    background: white;
+    border-radius: 10px;
+    border: none;
+    color: #FB636F;
+    font-size: 20px;
+    font-weight: bold;
+    height: 40px;
+    margin: 50px 0;
+    transition: 1s transform;
+    width: 200px;
+}
+
+.login_zone a {
+    text-decoration: none;
+    color: #7A2D33;
+}
+
+/**** CHECK BOX ****/
+
+.cbx {
+    margin: auto;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: pointer;
+}
+.cbx span {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translate3d(0, 0, 0);
+}
+.cbx span:first-child {
+    position: relative;
+    width: 18px;
+    height: 18px;
+    border-radius: 3px;
+    transform: scale(1);
+    vertical-align: middle;
+    border: 1px solid white;
+    transition: all 0.2s ease;
+}
+.cbx span:first-child svg {
+    position: absolute;
+    top: 3px;
+    left: 2px;
+    fill: none;
+    stroke: #FFFFFF;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dasharray: 16px;
+    stroke-dashoffset: 16px;
+    transition: all 0.3s ease;
+    transition-delay: 0.1s;
+    transform: translate3d(0, 0, 0);
+}
+.cbx span:first-child:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #7A2D33;
+    display: block;
+    transform: scale(0);
+    opacity: 1;
+    border-radius: 50%;
+}
+.cbx span:last-child {
+    padding-left: 8px;
+}
+.cbx:hover span:first-child {
+    border-color: #7A2D33;
+}
+  
+.inp-cbx:checked + .cbx span:first-child {
+    background: #7A2D33;
+    border-color: #632329;
+    animation: wave 0.4s ease;
+}
+.inp-cbx:checked + .cbx span:first-child svg {
+    stroke-dashoffset: 0;
+}
+.inp-cbx:checked + .cbx span:first-child:before {
+    transform: scale(3.5);
+    opacity: 0;
+    transition: all 0.6s ease;
+}
+  
+@keyframes wave {
+50% {
+    transform: scale(0.9);
+}
+}
+
+/**** GUESTS *****/
+.guests{
+    background-color: #E5E5E5;
+    font-family: roboto;
+    font-size: 20px;
+}
+
+#guests {
+    font-family: roboto;
+    border-collapse: collapse;
+    width: 90%;
+
+    background-color: white;
+    box-shadow: 0 0 1.5em rgba(0, 0, 0, 0.2);
+}
+
+#guests td, #guests th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    font-size: 12px;
+}
+
+#guests tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+#guests tr:hover {
+    background-color: #ddd;
+}
+
+#guests th {
+    text-align: left;
+    background-color: #FB636F;
+    color: white;
 }
