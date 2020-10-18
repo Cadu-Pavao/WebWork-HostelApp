@@ -174,7 +174,7 @@ footer section {
     padding: 25px;
     width: auto;
     height: auto;
-    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8) ), url('images/02.jpg');
+    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.95) ), url('images/02.jpg');
     background-position:center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -185,24 +185,29 @@ footer section {
 .login_zone {
     background-color: #FB636F;
     border-radius: 30px;
-    width: 300px;
+    width: 250px;
     height: 600px;
+}
+
+label{
+    font-family: roboto;
+    font-size: 1em;
 }
 
 input[type=text] {
     border: none;
     background-color: white;
     border-radius: 50px;
-    height: 35px;
+    height: 25px;
     width: 250px;
     color: #cccccc;
 }
 
 input[type=submit] {
-    background: white;
+    background: #FB636F;
     border-radius: 10px;
     border: none;
-    color: #FB636F;
+    color: white;
     font-size: 20px;
     font-weight: bold;
     height: 40px;
@@ -292,13 +297,17 @@ input[type=submit] {
 }
 
 /**** GUESTS *****/
-.guests{
+.guest_main{
+    background-color: #e4e4e4;
+}
+
+#Guests_Table{
     background-color: #E5E5E5;
     font-family: roboto;
     font-size: 20px;
 }
 
-#guests {
+#Guests_Table {
     font-family: roboto;
     border-collapse: collapse;
     width: 90%;
@@ -307,21 +316,21 @@ input[type=submit] {
     box-shadow: 0 0 1.5em rgba(0, 0, 0, 0.2);
 }
 
-#guests td, #guests th {
+#Guests_Table td, #Guests_Table th {
     border: 1px solid #ddd;
     padding: 8px;
     font-size: 12px;
 }
 
-#guests tr:nth-child(even){
+#Guests_Table tr:nth-child(even){
     background-color: #f2f2f2;
 }
 
-#guests tr:hover {
+#Guests_Table tr:hover {
     background-color: #ddd;
 }
 
-#guests th {
+#Guests_Table th {
     text-align: left;
     background-color: #FB636F;
     color: white;
