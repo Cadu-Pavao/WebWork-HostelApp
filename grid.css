@@ -1,0 +1,159 @@
+/*******************************************************/
+/*  Folha de estilo com Grid - Sparkling Water Hostel  */
+/*******************************************************/
+/** HOME **/
+/** VISIT CARD **/
+.item1 { grid-area: image; }
+.item2 { grid-area: text; }
+
+.visitCard {
+    display: grid;
+    grid-template-areas:
+      'text text text text text image';
+    grid-gap: 150px;
+    background-color: #2196F3;
+    padding: 50px;
+}
+
+.item2 h1{
+    font-size: 6em;
+}
+
+.item2 p{
+    font-size: 1em;
+}
+
+/** SOBRE **/
+
+.item3 { grid-area: images; }
+.item4 { grid-area: desc; }
+
+.sobre {
+    display: grid;
+    grid-template-areas:
+      'images images desc desc desc desc';
+    grid-gap: 50px;
+    padding: 80px;
+}
+
+.image_overlay{
+    margin: -100px 0 0 100px;
+}
+
+section img {
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.6);
+}
+
+/** ATRAÇÕES **/
+
+.item5 { grid-area: desc; }
+.item6 { grid-area: image; }
+
+.atracao {
+    display: grid;
+    grid-template-areas:
+      'des desc desc desc image image';
+    grid-gap: 100px;
+    padding: 80px;
+    text-align: right;
+
+}
+
+/** COMO CHEGAR **/
+
+.item7 { grid-area: desc; }
+.item8 { grid-area: maps; }
+
+.local {
+    display: grid;
+    grid-template-areas:
+      'maps maps desc desc desc desc';
+    grid-gap: 100px;
+    padding: 80px;
+    text-align: left;
+
+}
+
+.item8 {
+    border: solid 5px #282A2d;
+    margin: -180px 0 0 0;
+}
+.item8 iframe{
+    width: 500px;
+}
+
+/** FOOTER **/
+.title { 
+    grid-area: title;
+    padding: 10px;
+}
+
+.social { grid-area: social; }
+.contact { grid-area: contact; }
+.adress { grid-area: adress; }
+
+.direitos { 
+    grid-area: dir;
+    text-align: center;
+}
+
+footer {
+    display: grid;
+    grid-template-areas:
+      'title title title title title title'
+      'social social contact contact adress adress'
+      'dir dir dir dir dir dir';
+    grid-gap: 10px;
+    padding: 0px;
+}
+
+/** GUESTS **/
+.id { grid-area: id; }
+.stats { grid-area: stats; }
+.name { grid-area: name; }
+.last_name { grid-area: lm; }
+.email { grid-area: email; }
+.phone { grid-area: phone; }
+
+#guest-form {
+    display: grid;
+    grid-template-areas:
+      'id id stats stats name name'
+      'lm lm email email phone phone';
+    grid-gap: 10px;
+    padding:  20px 10%;
+
+}
+
+/** LOGIN **/
+ .login_zone { grid-area: login; }
+
+ .background_full {
+     display: grid;
+     grid-template-areas: 'none login login login login none';
+
+ }
+
+.is { grid-area: is;}
+.form_box { grid-area: form_box;}
+.es { grid-area: es; }
+
+
+ .login_zone {
+     display: grid;
+     grid-template-areas: 'is is is is is is'
+     'form_box form_box form_box form_box form_box form_box'
+     'es es es es es es';
+     align-items: center;
+}
+
+ .login_zone form input {
+    margin: 20px 0;
+
+ }
+
+ .form_box input[type=submit] {
+     background-color: white;
+     color: #FB636F;
+ }
+

@@ -301,16 +301,13 @@ input[type=submit] {
     background-color: #e4e4e4;
 }
 
-#Guests_Table{
-    background-color: #E5E5E5;
-    font-family: roboto;
-    font-size: 20px;
-}
-
 #Guests_Table {
+    background-color: #E5E5E5;
+    font-size: 20px;
     font-family: roboto;
     border-collapse: collapse;
     width: 90%;
+    margin: 20px 5% 0 5%;
 
     background-color: white;
     box-shadow: 0 0 1.5em rgba(0, 0, 0, 0.2);
