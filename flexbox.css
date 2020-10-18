@@ -1,3 +1,39 @@
 /**********************************************************/
 /*  Folha de estilo com flexbox - Sparkling Water Hostel  */
 /**********************************************************/
+.visitCard{
+    display: flex;
+}
+.visitCard h1 {
+    font-size: 6em;
+}
+.visitCard p {
+    font-size: 1em;
+}
+
+.sobre {
+    display: flex;
+}
+
+.image_overlay{
+    margin: -100px 0 0 100px;
+}
+
+.item3{
+    margin: 40px;
+}
+
+section img {
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.7);
+    margin: 0 20px;
+}
+
+.atracao{
+    display: flex;
+    text-align: right;
+}
+
+.local {
+    display: flex;
+    text-align: left;
+}

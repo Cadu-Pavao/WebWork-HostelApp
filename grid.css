@@ -109,17 +109,21 @@ footer {
 
 /** GUESTS **/
 .id { grid-area: id; }
-.stats { grid-area: stats; }
 .name { grid-area: name; }
 .last_name { grid-area: lm; }
 .email { grid-area: email; }
+.address { grid-area: address; }
+.country { grid-area: country; }
+.state { grid-area: state; }
 .phone { grid-area: phone; }
+.rose_btn { grid-area: btn; }
 
 #guest-form {
     display: grid;
     grid-template-areas:
-      'id id stats stats name name'
-      'lm lm email email phone phone';
+      'id id name name lm lm'
+      'email email address address country country'
+      'state state phone phone btn btn';
     grid-gap: 10px;
     padding:  20px 10%;
 
